@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/tab_meet_mentoring_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/notext"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="데이터가 없습니다."
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:visibility="visible"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

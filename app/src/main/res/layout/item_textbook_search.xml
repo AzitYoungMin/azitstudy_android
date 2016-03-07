@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tv_name_textbook_search_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/img_selected_textbook_search_item"
+        android:ellipsize="end"
+        android:hint="교재는 교재명, 인강은 강사 "
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/img_selected_textbook_search_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/item_belong_selected" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="white_grey">#efefef</color>
+    <color name="dark_grey">#b2b2b2</color>
+    <color name="dark">#33393d</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="azit_green_bg">#1fb4ff</color>
+    <color name="gray_color">#e9e9e9</color>
+    <color name="header_bg_color">#1FB4FF</color>
+    <color name="teacher_setting_sub_header">#1FB4FF</color>
+    <color name="teacher_setting_line_view">#33393D</color>
+    <color name="transparent">#00000000</color>
+    <color name="btn_bg_black">#33393D</color>
+    <color name="btn_bg_blue">#1195ed</color>
+    <color name="progress_color_yellow">#F9BB41</color>
+    <color name="progress_color_pink">#FF7BA4</color>
+    <color name="tv_test_student_main_teacher">#F27AA3</color>
+    <color name="text_gray_join_student_3">#ADB0B6</color>
+    <color name="green_header">#1FB4FF</color>
+    <color name="bg_button_gray">#ACB1B5</color>
+    <color name="bg_button_selected">#bbedff</color>
+    <color name="circle_progress_bg">#353a3e</color>
+    <color name="circle_progress_des">#adb2b5</color>
+    <color name="text_primary">#555555</color>
+    <color name="schedule_color_gray">#EFEFEF</color>
+    <color name="schedule_item_selected_bg">#33393D</color>
+    <color name="transparent_1">#33000000</color>
+    <color name="header_black_color">#33393D</color>
+    <color name="student_mock_test">#33393D</color>
+    <color name="student_mock_not_test">#FF92A2</color>
+
+</resources>

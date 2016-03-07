@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#b2b2b2"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:text="권한이 없습니다."
+            android:textSize="25sp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:text="아지트 프리미엄 서비스를 신청해 주세요 :)"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#e9e9e9"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:src="@drawable/request"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout4">
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/no_mentoring"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_width="15dp"
+            android:background="#1fb4ff"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="맞춤 멘토링 서비스란?"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="개인 멘토에게 학습 노하우나 공부법, 경험 공유,\n대인관계, 비전 등에 대한 조언과 도움을\n요청할 수 있는 서비스입니다."
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_width="15dp"
+            android:background="#1fb4ff"
+            android:layout_height="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="주요활동"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="멘토가 나의 학습/성적분석을 체크해주고 관리해주며\n멘토에게 개인질문을 할 수 있고,\n기록표에 관한 알림이나 공지사항을\n받아 볼 수 있습니다."
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

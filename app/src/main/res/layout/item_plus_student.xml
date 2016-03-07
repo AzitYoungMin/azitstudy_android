@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <CheckBox
+        android:id="@+id/cb_item_plus_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/check_box_circle" />
+
+    <TextView
+        android:id="@+id/tv_name_item_plus_student"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toRightOf="@id/cb_item_plus_student"
+        android:text="이름"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_school_item_plus_student"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_name_item_plus_student"
+        android:text="학교"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_email_item_plus_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_school_item_plus_student"
+        android:text="이메일"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

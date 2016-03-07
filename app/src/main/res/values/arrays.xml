@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grade">
+        <item>1등급</item>
+        <item>2등급</item>
+        <item>3등급</item>
+        <item>4등급</item>
+        <item>5등급</item>
+        <item>6등급</item>
+        <item>7등급</item>
+        <item>8등급</item>
+        <item>9등급</item>
+        <item>잘모르겠다</item>
+    </string-array>
+
+    <string-array name="school">
+        <item>고1</item>
+        <item>고2</item>
+        <item>고3</item>
+        <item>재도전</item>
+    </string-array>
+
+    <string-array name="korean_tier">
+        <item>1등급</item>
+        <item>2등급</item>
+        <item>3등급</item>
+        <item>4등급</item>
+        <item>5등급</item>
+        <item>6등급</item>
+        <item>7등급</item>
+        <item>8등급</item>
+        <item>9등급</item>
+        <item>잘모르겠다</item>
+    </string-array>
+
+    <string-array name="bank">
+        <item>은행을 선택해주세요</item>
+        <item>우리</item>
+        <item>부산</item>
+        <item>대구</item>
+        <item>외환</item>
+        <item>우체국</item>
+        <item>국민</item>
+        <item>수협</item>
+        <item>하나</item>
+        <item>경남</item>
+        <item>신한</item>
+        <item>농협</item>
+        <item>기업</item>
+        <item>제주</item>
+    </string-array>
+
+</resources>

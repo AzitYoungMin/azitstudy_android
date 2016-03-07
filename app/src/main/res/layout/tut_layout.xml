@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_pager"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#E9E9E9">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_tut"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            android:src="@drawable/next_black" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="20dp"
+            android:src="@drawable/back_black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_pager"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/description"
+            android:src="@drawable/img_tut4_des" />
+
+        <TextView
+            android:id="@+id/description"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_above="@+id/btn_skip"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@color/azit_green_bg"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="신청하기" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

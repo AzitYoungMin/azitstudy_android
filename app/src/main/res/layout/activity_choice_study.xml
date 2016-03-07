@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height_small"
+            android:background="#1FB4FF">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cancel_white" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="선택"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/area_liberal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/life_ethics"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="생활과 윤리" />
+
+                <TextView
+                    android:id="@+id/ethics_idea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="윤리와 사상" />
+
+
+                <TextView
+                    android:id="@+id/history_korea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="한국사" />
+
+                <TextView
+                    android:id="@+id/geography_korea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:minLines="2"
+                    android:text="한국지리" />
+
+                <TextView
+                    android:id="@+id/geography_world"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="세계지리" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/history_east"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="동아시아사"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/history_world"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="세계사" />
+
+                <TextView
+                    android:id="@+id/law"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="법과 정치" />
+
+                <TextView
+                    android:id="@+id/economy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="경제" />
+
+                <TextView
+                    android:id="@+id/culture"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="사회문화" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_natural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/physics1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="물리1" />
+
+                <TextView
+                    android:id="@+id/chemistry1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="화학1" />
+
+                <TextView
+                    android:id="@+id/bioscience1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="생명과학1" />
+
+                <TextView
+                    android:id="@+id/earthscience1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="지구과학1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/physics2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="물리2" />
+
+                <TextView
+                    android:id="@+id/chemistry2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="화학2" />
+
+                <TextView
+                    android:id="@+id/bioscience2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="생명과학2" />
+
+
+                <TextView
+                    android:id="@+id/earthscience2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ask_clinic_item_study_height"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="지구과학2" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

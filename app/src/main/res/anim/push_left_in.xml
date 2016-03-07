@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ * Copyright (C) 2007 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *			http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<!-- 
+push_left_in.xml : view가 왼쪽 방향으로 밀려 들어올 때 사용
+push_left_out.xml : view가 왼쪽 방향으로 밀려 나갈 때 사용
+push_right_in.xml : view가 오른쪽 방향으로 밀려 들어올 때 사용
+push_right_out.xml : view가 오른쪽 방향으로 밀려 나갈 때 사용
+
+<translate>
+상하좌우 이동 animation을 지정
+
+android:fromXDelta -> animation 시작하는 x좌표
+android:toXDelta -> animation 끝나는 x좌표
+android:fromYDelta -> animation 시작하는 y좌표
+android:toYDelta -> animation 끝나는 y좌표
+
+-100% ~ 100% : 자신을 기준으로 한 위치에 대한 비율(0% 현재 자신의 위치)
+~100%p ~ 100%p : 부모를 기준으로 한 위치에 대한 비율(0%p 현재 자신의 위치) 
+
+<alpha>
+투명도 지정(0.0 ~ 1.0[0.0이 투명, 1.0이 완전 불투명])
+
+android:fromAlpha -> animation 시작시 투명도
+android:toAlpha -> animation 완료시 투명도
+android:duration : 애니메이션 시작 후 끝나는 시간을 밀리세컨드 단위로 설정
+
+ -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	<translate android:fromXDelta="100%p" android:toXDelta="0%p" android:duration="300"/>
+	<alpha android:fromAlpha="0.0" android:toAlpha="1.0" android:duration="300" />
+</set>
+
+
+
+
+
+
+
+
+

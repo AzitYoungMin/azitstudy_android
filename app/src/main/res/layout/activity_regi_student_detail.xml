@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="#1FB4FF">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="회원가입"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_rectangle"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/liberal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="문과"
+                        android:textColor="#1FB4FF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#e9e9e9" />
+
+                    <TextView
+                        android:id="@+id/natural"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="이과"
+                        android:textColor="#A7ABAE"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#efefef" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="50dp"
+                        android:text="국어"
+                        android:textColor="#1FB4FF"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/koreanA"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/a" />
+
+                    <TextView
+                        android:id="@+id/koreanB"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/b" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#efefef" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="50dp"
+                        android:text="수학"
+                        android:textColor="#1FB4FF"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/mathA"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/a" />
+
+                    <TextView
+                        android:id="@+id/mathB"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/b" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#efefef" />
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="탐구"
+                    android:textColor="#1FB4FF"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+
+                    android:id="@+id/area_liberal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#efefef"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/economy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="경제" />
+
+                        <TextView
+                            android:id="@+id/law"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="법과 정치" />
+
+                        <TextView
+                            android:id="@+id/culture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="사회문화" />
+
+                        <TextView
+                            android:id="@+id/history_korea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="한국사" />
+
+                        <TextView
+                            android:id="@+id/history_world"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="세계사" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/history_east"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="동아시아사"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/geography_korea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="한국지리" />
+
+                        <TextView
+                            android:id="@+id/geography_world"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="세계지리" />
+
+                        <TextView
+                            android:id="@+id/life_ethics"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="생활과\n윤리" />
+
+                        <TextView
+                            android:id="@+id/ethics_idea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="윤리와\n사상" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area_natural"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#efefef"
+                    android:orientation="vertical"
+                    android:padding="1dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/physics1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="물리1" />
+
+                        <TextView
+                            android:id="@+id/physics2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="물리2" />
+
+                        <TextView
+                            android:id="@+id/chemistry1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="화학1" />
+
+                        <TextView
+                            android:id="@+id/chemistry2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="화학2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bioscience1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="생명과학1" />
+
+                        <TextView
+                            android:id="@+id/bioscience2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="생명과학2" />
+
+                        <TextView
+                            android:id="@+id/earthscience1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="지구과학1" />
+
+                        <TextView
+                            android:id="@+id/earthscience2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:minLines="2"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="지구과학2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#efefef" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="제2외국어"
+                        android:textColor="#1FB4FF"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/langcheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="#e9e9e9"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="희망 학과 선택(중복선택 가능)"
+                        android:textColor="#b8b8b8"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="#e9e9e9"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:id="@+id/inmungwahakDaehak_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="미술대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/inmungwahakDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_bupgwa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:id="@+id/bupgwaDaehak_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="법과대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/bupgwaDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:id="@+id/sahwaeDaehak_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="사회과학대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/sahwaeDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layout_sanggyungDaehak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:id="@+id/sanggyungDaehak_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="상경대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/sanggyungDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="사범대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/sabumDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="의학과 및 보건계열대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/bogunDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="미술대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/misulDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="법과대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/bubDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:background="#ffffff">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="예·체능대학"
+                                android:textSize="13sp" />
+
+                            <CheckBox
+                                android:id="@+id/yeaDaehak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="15dp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/btnComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#1fb4ff"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="15dp"
+                        android:text="아지트 입장하기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/next_white" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

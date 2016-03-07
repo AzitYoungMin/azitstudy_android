@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="#1FB4FF"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="회원가입"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+
+            android:gravity="center"
+            android:layout_marginRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/zzz"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:text="제대로 공부해보고 싶다면?"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/choice_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_regis_selector"
+            android:gravity="center"
+            android:text="학생"
+            android:textColor="#8e8e8e"
+            android:textSize="18sp" />
+        <RelativeLayout
+
+            android:gravity="center"
+            android:layout_marginRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/zzz1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="17dp"
+                android:text="꿀팁이 많은 언니 오빠라면?"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/choice_mento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_regis_selector"
+            android:gravity="center"
+            android:text="멘토"
+            android:textColor="#8e8e8e"
+            android:textSize="18sp" />
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="17dp"
+                android:text="학생들을 사랑하는 선생님이라면?"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/choice_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_regis_selector"
+            android:gravity="center"
+            android:text="선생님"
+            android:textColor="#8e8e8e"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

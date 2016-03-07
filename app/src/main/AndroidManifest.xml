@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trams.azit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.trams.azit.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.trams.azit.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".util.GlobalFont"
+        android:allowBackup="true"
+        android:configChanges="screenSize|keyboardHidden"
+        android:icon="@drawable/agbagb"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan">
+        <activity
+            android:name=".LoginActivity_"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegiChoice_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.register.student.JoinStudent1Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.register.student.JoinStudent2Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.register.student.JoinStudent3Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Plus_Student_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Plus_Student_Pop"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Regi_student_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Regi_mento_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Regi_teacher_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.MentoMainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".StudentMainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Teacher_Main_">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".SendSchedule_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Clause"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChoiceStudy"
+            android:theme="@style/ThemeTransparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Record_Student_Study"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Record_Student_Grade"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Send_Message_From_Teacher"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Edit_Student_Profile_"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Authorization_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Regi_student_detail_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Ask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Ask1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Plus_Act"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Mento_Profile"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Answer"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".My_Act"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Mento_Act"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyMessage"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".My_Message_Detail"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Mento_answer"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Send_Message"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Send_Message1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Ask_Meet_Mentor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Ask_Azit_Clinic"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChangePass"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DDay_Change"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Mento_answer_from_mentor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Mentor_answer_comment" />
+        <activity
+            android:name=".InputGradeLv1"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".InputGradeLv2"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Plus_DDay"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".dialog.TimeModify"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".dialog.TimeModifyNonStudy"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".dialog.FinishActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".dialog.MainStudentSettingDialog"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".dialog.RefundPointActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Edit_DDay"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Setting_Goal"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FindPasswordActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RegisterTeacherActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RegisterTeacherNextActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.TeacherSettingActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.TeacherSettingPassword_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.NoticeActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.TeacherSettingAskActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.TeacherSettingDrawActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- HuyDV: mentor -->
+        <activity
+            android:name=".activity.MentorJoinStep1Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.MentorSettingActivity_"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.MyPointActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.CreateScheduleActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ReportPaymentActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.trams.joonggu_nubigo" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".gcm.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+
+
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+
+        <service
+            android:name=".gcm.RegistrationIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".Help_Student" />
+        <activity android:name=".Help_Mentor" />
+        <activity android:name=".Full" />
+        <activity android:name=".Helo_Act" />
+        <activity android:name=".BoardView"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/azit_green_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:text="제2외국어"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iconClose"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnSocialScience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSocialScience"
+        android:background="@drawable/bg_social_science"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btChinese"
+                style="@style/button_choose_subject_join3"
+                android:text="중국어" />
+
+            <Button
+                android:id="@+id/btJapanese"
+                style="@style/button_choose_subject_join3"
+                android:text="일본어" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btVietnamese"
+                style="@style/button_choose_subject_join3"
+                android:text="베트남어" />
+
+            <Button
+                android:id="@+id/btArabic"
+                style="@style/button_choose_subject_join3"
+                android:text="아랍어" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btGerman"
+                style="@style/button_choose_subject_join3"
+                android:text="독일어" />
+
+            <Button
+                android:id="@+id/btSpanish"
+                style="@style/button_choose_subject_join3"
+                android:text="스페인어" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btFrench"
+                style="@style/button_choose_subject_join3"
+                android:text="프랑스어" />
+
+            <Button
+                android:id="@+id/btRussian"
+                style="@style/button_choose_subject_join3"
+                android:text="러시아어" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btChineseCharacter"
+                style="@style/button_choose_subject_join3"
+                android:text="한문" />
+
+            <Button
+                android:id="@+id/btSocialCulture"
+                android:background="@color/bg_button_gray"
+                style="@style/button_choose_subject_join3" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

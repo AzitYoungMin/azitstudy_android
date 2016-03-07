@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="student_menu_items">
+        <item>홈</item>
+        <item>나의 학습 분석</item>
+        <item>나의 성적 분석</item>
+        <item>멘토만나기</item>
+        <item>풀어주세요</item>
+        <item>맞춤리포트</item>
+        <item>문의하기</item>
+        <item>초대하기</item>
+        <item>설정</item>
+    </string-array>
+
+    <string-array name="mento_menu_items">
+        <item>홈</item>
+        <item>멘토링 답변</item>
+        <item>풀어주세요</item>
+        <item>설정</item>
+        <item>문의하기</item>
+        <item>초대하기</item>
+    </string-array>
+</resources>

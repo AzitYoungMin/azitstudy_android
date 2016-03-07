@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvUniversity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="지원가능대학"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="지원가능대학"
+        android:textColor="@color/text_gray_join_student_3" />
+
+    <TextView
+        android:id="@+id/tvOptional"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="지원가능대학"
+        android:textColor="@color/text_gray_join_student_3" />
+
+</LinearLayout>

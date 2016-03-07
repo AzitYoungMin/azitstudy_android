@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mento_answer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/mento_answer_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_basic_icon" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/white_crop" />
+
+    <TextView
+        android:id="@+id/mento_answer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/mento_answer_profile"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mento_answer_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/mento_answer_name"
+        android:text="멘토"
+        android:textAlignment="viewEnd"
+        android:textColor="#1fb4ff"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/mento_answer_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/comment_text"
+        android:src="@drawable/answer_icon" />
+
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:text="댓글달기"
+        android:textColor="#e9e9e9"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/mento_answer_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mento_answer_name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@id/mento_answer_profile"
+        android:layout_toRightOf="@id/mento_answer_profile"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_below="@+id/mento_answer_content"
+        android:id="@+id/mento_answer_image"
+        android:layout_toEndOf="@id/mento_answer_profile"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mento_answer_comment_createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mento_answer_image"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/mento_answer_profile"
+        android:text="15-08-18 16:21"
+        android:textColor="#e9e9e9"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/reportbtn"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/mento_answer_image"
+        android:layout_toRightOf="@+id/mento_answer_comment_createtime"
+        android:layout_width="wrap_content"
+        android:background="@drawable/report_btn"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/mento_answer_check"
+        android:button="@drawable/checkbox_pink"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mento_answer_content"
+        android:text="  채택하기"
+        android:textColor="#b2b2b2"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rating_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/mento_answer_comment_createtime"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/mento_answer_profile"
+        android:background="#e9e9e9"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="#7D858C" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="평가하기"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/text_ll"
+            android:layout_below="@+id/text1"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mento_answer_score0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
+                android:text="0점"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/mento_answer_score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1점"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/mento_answer_score2"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="2점"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/mento_answer_score3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3점"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/mento_answer_score4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4점"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/mento_answer_score5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5점"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/mento_answer_ratinggroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_ll"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RadioButton
+                android:id="@+id/mento_answer_ratingbtn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_blue" />
+
+            <RadioButton
+                android:id="@+id/mento_answer_ratingbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_blue" />
+
+            <RadioButton
+                android:id="@+id/mento_answer_ratingbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_blue" />
+
+            <RadioButton
+                android:id="@+id/mento_answer_ratingbtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_blue" />
+
+            <RadioButton
+                android:id="@+id/mento_answer_ratingbtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_blue" />
+
+            <RadioButton
+                android:id="@+id/mento_answer_ratingbtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_blue" />
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

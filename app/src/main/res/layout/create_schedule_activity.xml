@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height_small"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_black"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="8dp"
+            android:text="활동추가"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_add_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="완료"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/header_layout"
+        android:background="@color/gray_color" />
+
+    <GridView
+        android:id="@+id/gr_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/v_line_2"
+        android:layout_below="@id/v_line_1"
+        android:background="@color/schedule_color_gray"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="6"
+        android:verticalSpacing="2px" />
+
+    <View
+        android:id="@+id/v_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/layout_content"
+        android:background="@color/gray_color" />
+
+    <RelativeLayout
+
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/v_line_3">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="활동"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_shedule_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_title"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="활동 입력"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/tv_activity_title"
+        android:background="@color/gray_color" />
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/gr_schedule_all"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="아이콘 선택"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <GridView
+        android:id="@+id/gr_schedule_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="6"
+        android:verticalSpacing="1px" />
+
+</RelativeLayout>

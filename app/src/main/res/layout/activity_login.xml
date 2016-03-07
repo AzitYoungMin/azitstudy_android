@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#214574"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/main_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:drawableLeft="@drawable/id_icon"
+            android:ems="10"
+            android:hint="E-mail"
+            android:textColorHint="@color/dark_grey"
+            android:inputType="textEmailAddress"
+            android:textColor="#efefef"
+            android:textCursorDrawable="@drawable/edittext_cursor_white" />
+
+        <EditText
+            android:id="@+id/et_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:drawableLeft="@drawable/password_icon"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:textColorHint="@color/dark_grey"
+            android:inputType="textPassword"
+            android:textColor="#efefef"
+            android:textCursorDrawable="@drawable/edittext_cursor_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <CheckBox
+            android:id="@+id/cb_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_box"
+            android:checked="false"
+            android:paddingLeft="13dp"
+            android:text="로그인 상태 유지"
+            android:textColor="#efefef" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_find_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/transparent"
+        android:text="비밀번호 찾기"
+        android:textColor="#efefef" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="로그인"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:background="#2a568f" />
+
+        <TextView
+            android:id="@+id/intro_btn"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Azit 소개"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:background="#153258" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/regi_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="처음 오셨나요? 가입하기"
+        android:textColor="#efefef" />
+
+</LinearLayout>

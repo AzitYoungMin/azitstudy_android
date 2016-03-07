@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTitleExam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:paddingLeft="10dp"
+        android:text="언어" />
+
+    <EditText
+        android:id="@+id/edDataExam"
+        style="@style/edittext_input_grade2"
+        android:maxLength="3"
+        android:hint="점수를 입력하세요" />
+
+    <TextView
+        android:id="@+id/tvUnitExam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="10dp"
+        android:text="점" />
+
+</LinearLayout>

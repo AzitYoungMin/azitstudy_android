@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg_color">
+
+        <ImageView
+            android:id="@+id/img_back_teacher_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/img_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="설정"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_title_height"
+                android:background="@color/gray_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="알림"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="푸쉬알림"
+                    android:textSize="@dimen/teacher_setting_tv_size" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_push_teacher"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/toggle"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_title_height"
+                android:background="@color/gray_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="계정관리"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_email_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_name_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="홍길동"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height">
+
+                <Spinner
+                    android:id="@+id/sp_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/mentor_level"
+                    android:paddingLeft="5dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_change_password_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="비밀번호 변경"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height">
+
+                <EditText
+                    android:id="@+id/tv_phone_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/img_change_phone_teacher"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/teacher_setting_tv_size" />
+
+                <Button
+                    android:id="@+id/img_change_phone_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azit_green_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="변경하기" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_title_height"
+                android:background="@color/gray_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="서비스 및 문의"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="공지사항"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height">
+
+                <TextView
+                    android:id="@+id/tv_version_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="버전정보"
+                    android:textSize="@dimen/teacher_setting_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textSize="@dimen/teacher_setting_tv_size" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_terms_policy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="이용약관 및 개인정보 취급방침"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_mail_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="컨텐츠 제보"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_open_brower_screen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="문의 하기"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_title_height"
+                android:background="@color/gray_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_logout_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="로그아웃"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view" />
+
+            <TextView
+                android:id="@+id/tv_draw_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/teacher_setting_one_row_height"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="회원탈퇴"
+                android:textSize="@dimen/teacher_setting_tv_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/teacher_setting_line_view"
+                android:paddingBottom="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <CheckBox
+        android:id="@+id/cb_item_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/check_box_circle"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/img_present_item_student"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cb_item_student"
+        android:background="@drawable/profile_basic_icon" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cb_item_student"
+        android:src="@drawable/white_crop" />
+
+    <TextView
+        android:id="@+id/tv_name_item_student"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/img_present_item_student"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="아지트"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="0.1dp"
+        android:layout_toLeftOf="@+id/img_detail_item_student"
+        android:layout_toRightOf="@id/tv_name_item_student"
+        android:background="#33393D">
+
+        <LinearLayout
+            android:id="@+id/layout_day"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:padding="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:id="@+id/mon_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/check_day"
+                android:gravity="center"
+                android:text="월"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+
+            <TextView
+                android:id="@+id/tue_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/check_day"
+                android:gravity="center"
+                android:text="화"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/wed_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/check_day"
+                android:gravity="center"
+                android:text="수"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/thu_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/check_day"
+                android:gravity="center"
+                android:text="목"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/fri_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/check_day"
+                android:gravity="center"
+                android:text="금"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/sat_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/check_day"
+                android:gravity="center"
+                android:text="토"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/sun_image"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/check_day_half"
+                android:gravity="center"
+                android:text="일"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_test_result_item_student"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_day"
+            android:background="#33393D"
+            android:gravity="center"
+            android:text="입력완료"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_detail_item_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0dp"
+        android:padding="10dp"
+        android:src="@drawable/student_see" />
+
+</RelativeLayout>
