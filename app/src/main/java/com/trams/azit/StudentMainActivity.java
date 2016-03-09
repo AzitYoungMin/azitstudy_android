@@ -76,8 +76,8 @@ public class StudentMainActivity extends ConnActivity {
     private String[] lvMenuItems;
     public ImageView btMenu, btBack, btPen, btPerson, btAlarm, btMessage, btPoint, profile_pic;
     public TextView tvTitle, name, target_university;
-    public static String[] lvMenuTag = {"home", "my_study", "my_grde", "meet_mento", "azit_clinic", "report", "inquiry","Invitation", "setting"};
-    public static int[] lvMenuImages = {R.drawable.home, R.drawable.my_study_white, R.drawable.my_grade_whiite, R.drawable.meet_mento_white, R.drawable.azit_clinic_white, R.drawable.mentoring_white, R.drawable.enter_azit_white, R.drawable.papa, R.drawable.app_setting};
+    public static String[] lvMenuTag = {"home", "my_study", "my_grde", "Free_Borad", "meet_mento", "azit_clinic", "report", "inquiry","Invitation", "setting"};
+    public static int[] lvMenuImages = {R.drawable.home, R.drawable.my_study_white, R.drawable.my_grade_whiite, R.drawable.my_grade_whiite, R.drawable.meet_mento_white, R.drawable.azit_clinic_white, R.drawable.mentoring_white, R.drawable.enter_azit_white, R.drawable.papa, R.drawable.app_setting};
     SharedPreferences myPrefs;
     static String secret, user_id;
     private int idKorean, idMath, idEnglish, idSocial, idScience, idMonth;
@@ -298,6 +298,9 @@ public class StudentMainActivity extends ConnActivity {
                 } else if (tvTitle.getText().toString().equals("풀어주세요")) {
                     Intent i = new Intent(StudentMainActivity.this, Ask_Azit_Clinic.class);
                     startActivity(i);
+                } else if (tvTitle.getText().toString().equals("게시판")) {
+                    Intent i = new Intent(StudentMainActivity.this, Ask_Free_Board.class);
+                    startActivity(i);
                 }
             }
         });
@@ -501,7 +504,17 @@ public class StudentMainActivity extends ConnActivity {
             btPerson.setVisibility(View.GONE);
             btMessage.setVisibility(View.GONE);
             tvTitle.setText(selectedItem);
-        } else if (selectedItem.compareTo("멘토만나기") == 0) {
+        } else if (selectedItem.compareTo("게시판") == 0) {
+            fragment = new Free_Borad();
+            btPoint.setVisibility(View.GONE);
+            btAlarm.setVisibility(View.GONE);
+            btMenu.setVisibility(View.VISIBLE);
+            btPen.setVisibility(View.VISIBLE);
+            btBack.setVisibility(View.GONE);
+            //btPerson.setVisibility(View.VISIBLE);
+            btMessage.setVisibility(View.GONE);
+            tvTitle.setText("게시판");
+        }else if (selectedItem.compareTo("멘토만나기") == 0) {
             fragment = new Meet_Mentor();
             btPoint.setVisibility(View.GONE);
             btAlarm.setVisibility(View.GONE);
@@ -523,8 +536,7 @@ public class StudentMainActivity extends ConnActivity {
             tvTitle.setText("풀어주세요");
         } else if (selectedItem.compareTo("맞춤리포트") == 0) {
 //            fragment = new Mentoring();
-           //fragment = new TutFragment();
-            fragment = new Free_Borad();
+           fragment = new TutFragment();
             btPoint.setVisibility(View.GONE);
             btAlarm.setVisibility(View.GONE);
             btMenu.setVisibility(View.GONE);

@@ -1007,11 +1007,11 @@ public class Student_Home extends ConnFragment implements View.OnClickListener {
         } else if (v == my_grade) {
             ((StudentMainActivity) getActivity()).onMenuItemClick(2);
         } else if (v == meet_mentor) {
-            ((StudentMainActivity) getActivity()).onMenuItemClick(3);
-        } else if (v == azit_clinic) {
             ((StudentMainActivity) getActivity()).onMenuItemClick(4);
-        } else if (v == mentoring) {
+        } else if (v == azit_clinic) {
             ((StudentMainActivity) getActivity()).onMenuItemClick(5);
+        } else if (v == mentoring) {
+            ((StudentMainActivity) getActivity()).onMenuItemClick(6);
         }
 
     }

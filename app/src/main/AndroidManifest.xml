@@ -297,7 +297,8 @@
         <activity android:name=".Help_Mentor" />
         <activity android:name=".Full" />
         <activity android:name=".Helo_Act" />
-        <activity android:name=".BoardView"></activity>
+        <activity android:name=".BoardView" />
+        <activity android:name=".Ask_Free_Board"></activity>
     </application>
 
 </manifest>
