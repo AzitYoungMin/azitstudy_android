@@ -388,14 +388,15 @@ public class StudentMainActivity extends ConnActivity {
             btMessage.setVisibility(View.GONE);
             tvTitle.setText("풀어주세요");
         } else if (position == 6) {
-            fragment = new Mentoring();
+            fragment = new Free_Borad();
+            btPoint.setVisibility(View.GONE);
             btAlarm.setVisibility(View.GONE);
-            btMenu.setVisibility(View.GONE);
-            btPen.setVisibility(View.GONE);
-            btPerson.setVisibility(View.GONE);
-            btBack.setVisibility(View.VISIBLE);
+            btMenu.setVisibility(View.VISIBLE);
+            btPen.setVisibility(View.VISIBLE);
+            btBack.setVisibility(View.GONE);
+            //btPerson.setVisibility(View.VISIBLE);
             btMessage.setVisibility(View.GONE);
-            tvTitle.setText("맞춤 멘토링");
+            tvTitle.setText("게시판");
         }
 
         ft.add(R.id.activity_main_content_fragment, fragment);

@@ -19,8 +19,12 @@ import com.trams.azit.util.Url_define;
 import com.tsengvn.typekit.TypekitContextWrapper;
 
 import org.apache.http.Header;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Ask_Free_Board extends ConnActivity {
 
@@ -75,7 +79,7 @@ public class Ask_Free_Board extends ConnActivity {
                 };
 
                 new AlertDialog.Builder(Ask_Free_Board.this)
-                        .setTitle("해당 질문을 삭제하시겠어요?")
+                        .setTitle("해당 질문을 취소하시겠어요?")
                         .setPositiveButton("확인", confirmListener)
                         .setNegativeButton("취소", cancelListener)
                         .show();
@@ -85,36 +89,35 @@ public class Ask_Free_Board extends ConnActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = Url_define.Student_Save_Ask_mento + Url_define.KEY;
                 try {
                     JSONObject jsonObject = new JSONObject();
-                    jsonObject.put("secret", secret);
+                    //jsonObject.put("secret", secret);
                     jsonObject.put("user_id", user_id);
                     jsonObject.put("title", title.getText().toString());
                     jsonObject.put("article", body.getText().toString());
-                    if (posting_id != 0) {
-                        jsonObject.put("posting_id", posting_id);
-                        url = Url_define.Student_Update_Ask_mento + Url_define.KEY;
 
-                    }
-                    Logger.e(secret);
+                    Date from = new Date();
+                    SimpleDateFormat transFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                    String to = transFormat.format(from);
+                    jsonObject.put("day", to);
+
+
                     Logger.e(user_id);
-                    requestJson(url, jsonObject, new ConnActivity.ConnHttpResponseHandler() {
+                    requestJson("http://192.168.1.21:2000/FreeBorad/Write", jsonObject, new ConnActivity.ConnHttpResponseHandler() {
                         @Override
-                        public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                        public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                             Log.d("statusCode : ", statusCode + "");
                             Log.d("response : ", response.toString());
                             super.onSuccess(statusCode, headers, response);
 
-                            if (posting_id != 0) {
+                            /*if (posting_id != 0) {
                                 Toast.makeText(Ask_Free_Board.this, "수정 완료!", Toast.LENGTH_LONG).show();
                             } else {
-                                Toast.makeText(Ask_Free_Board.this, "등록 완료!", Toast.LENGTH_LONG).show();
-                            }
 
-                            Intent i = new Intent(Ask_Free_Board.this, My_Act.class);
-                            i.putExtra("position", 0);
-                            startActivity(i);
+                            }*/
+
+                            Toast.makeText(Ask_Free_Board.this, "등록 완료!", Toast.LENGTH_LONG).show();
+
                             finish();
                         }
 

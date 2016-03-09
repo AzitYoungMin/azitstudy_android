@@ -125,7 +125,7 @@ public class Free_Borad extends ConnFragment {
                     try {
                         for (int i = 0; i < response.length(); i++) {
                             int is_answered = 0;
-                            addItem(response.getJSONObject(i).getInt("Posting_id"), response.getJSONObject(i).getString("Title"), response.getJSONObject(i).getString("Writer"), response.getJSONObject(i).getString("Text"), response.getJSONObject(i).getString("Created_at"), String.valueOf(response.getJSONObject(i).getInt("Num_of_reply")));
+                            addItem(response.getJSONObject(i).getInt("Posting_id"), response.getJSONObject(i).getString("Title"), response.getJSONObject(i).getString("Content"), response.getJSONObject(i).getString("Text"), response.getJSONObject(i).getString("Created_at"), String.valueOf(response.getJSONObject(i).getInt("Num_of_reply")));
                         }
 
                        /* String noOfBtn = response.getString("last_page_number");

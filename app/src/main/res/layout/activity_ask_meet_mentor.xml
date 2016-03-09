@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -31,7 +32,14 @@
             android:src="@drawable/cancel_white" />
 
     </RelativeLayout>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,17 +110,157 @@
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.1dp"
-        android:layout_marginBottom="20dp"
-        android:background="#a0a0a0" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#a0a0a0" />
 
-    <ImageView
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/register_btn" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="태그"
+                android:textColor="#1fb4ff" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_rec_small"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="  예:) #아우 #이어."
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#a0a0a0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="사진"
+                android:textColor="#1fb4ff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_rec_small"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:src="@drawable/add_pic" />
+
+                    <ImageView
+                        android:id="@+id/img_delete1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:src="@drawable/img_delete_schedule_type"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:src="@drawable/add_pic" />
+
+                    <ImageView
+                        android:id="@+id/img_delete2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:src="@drawable/img_delete_schedule_type"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:src="@drawable/add_pic" />
+
+                    <ImageView
+                        android:id="@+id/img_delete3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:src="@drawable/img_delete_schedule_type"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#a0a0a0" />
+
+            <ImageView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/register_btn" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

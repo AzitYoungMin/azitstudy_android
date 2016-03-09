@@ -94,7 +94,7 @@ public class BoardView extends ConnActivity  {
 
                         jo = response.getJSONObject(0);
                         QnAtitle.setText(jo.getString("Title"));
-                        mento_content.setText(jo.getString("Writer"));
+                        mento_content.setText(jo.getString("Content"));
                         writer.setText(jo.getString("Name"));
                         write_time.setText(jo.getString("Date"));
 
