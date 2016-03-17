@@ -37,24 +37,6 @@ android:fitsSystemWindows="true">
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#34393D"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp">
-
-        <TextView
-            android:id="@+id/QnAtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
-            android:text="공부전략좀 알려주세요~!"
-            android:textColor="#FFFFFF" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
         android:id="@+id/mento_answer_writer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,6 +61,16 @@ android:fitsSystemWindows="true">
             android:layout_toRightOf="@+id/writerTitle"
             android:text="최영민"
             android:textColor="#1FB4FF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/writer"
+            android:textSize="24px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wallet_link_text_light"
+            android:text="to 학생"/>
 
         <TextView
             android:id="@+id/write_time"
@@ -138,13 +130,18 @@ android:fitsSystemWindows="true">
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
                 </LinearLayout>
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_sr"
+                    android:src="@drawable/img_tut4_icon"/>
                 <TextView
                     android:id="@+id/mento_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
                     android:paddingLeft="10dp"
+                    android:text="test"
                     android:paddingRight="10dp"
                     android:paddingTop="20dp" />
             </LinearLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="vertical">
@@ -11,15 +12,16 @@
         android:layout_width="wrap_content"
         android:id="@+id/dd"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginBottom="8dp"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/user_img"
             android:layout_marginTop="10dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/kakao_default_profile_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+            android:background="@drawable/grey_crop"
             />
 
     </LinearLayout>
@@ -45,32 +47,37 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:orientation="horizontal">
 
             <TextView
 
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="12dp"
+                android:textSize="13dp"
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
                 android:text="아지트 :"
                  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="24px"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wallet_link_text_light"
+                android:text="to 학생"/>
             <TextView
                 android:id="@+id/title"
-                android:maxLength="17"
                 android:textColor="@color/black"
                 android:layout_toRightOf="@+id/dd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="5dp"
-                android:textSize="12dp"
-                android:maxWidth="150dp"
+                android:textSize="15dp"
+                android:maxWidth="700dp"
                 android:singleLine="true"
-                android:text="첫번째 게시글 제목입니다 ㅇㅇ" />
+                android:text="" />
 
             <ImageView
                 android:id="@+id/answer_complete"
@@ -90,8 +97,8 @@
             android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="26px"
-            android:layout_marginTop="3dp"
+            android:textSize="32px"
+            android:layout_marginTop="7dp"
 
             android:textColor="#1fb4ff"
             android:text="2015-08-12 15:30:10" />
@@ -110,67 +117,7 @@
 
         </LinearLayout>
     </LinearLayout>
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/Ri"
 
-    android:layout_marginTop="11dp">
-    <ImageView
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="55dp"
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView12"
-        android:layout_centerVertical="true"
-        android:src="@drawable/comment_grey" />
-
-    <TextView
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView13"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="5dp"
-        android:text="("
-        android:textColor="#32506a" />
-
-    <TextView
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="31dp"
-        android:id="@+id/comment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/next"
-        android:layout_centerVertical="true"
-        android:text="11"
-        android:textColor="#32506a" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/comment"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="24dp"
-        android:text=")"
-
-        android:textColor="#32506a" />
-
-    <ImageView
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="10dp"
-        android:src="@drawable/next_btn" />
-    </RelativeLayout>
 
 
     <LinearLayout
@@ -178,18 +125,40 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/dd"
         android:id="@+id/as12"
+        android:gravity="center"
+        android:orientation="vertical"
         android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/image_ser"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/img_tut4_icon"/>
+
 
         <TextView
 
             android:layout_marginLeft="5dp"
             android:lineSpacingExtra="4dip"
             android:id="@+id/context121"
-            android:layout_width="250dp"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_marginTop="5dp"
             android:layout_height="wrap_content"
-            android:textSize="11dp"
+            android:textSize="13dp"
             android:text="수능시험장 들어가면 국어영역 1교시는 제 컨디션이 나오기 힘들어요ㅜㅠ긴장이 많이 되니깐... 그나마 ebs지문들은 연계교재라도 좀 보면 마음의 안정 찾기가 쉽고하니 되도록이면 꼭 보세요! "
             android:singleLine="false" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/btn_bg_blue"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="#태그  #나타나는  #곳입니다"/>
     </LinearLayout>
 
     <LinearLayout
@@ -200,15 +169,41 @@
         android:background="@drawable/border"
         android:gravity="center">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="(하트) 좋아요 2개"/>
+            android:src="@drawable/comment"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:textSize="34px"
+            android:text=" 좋아요 2개"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
             android:paddingLeft="70dp"
-            android:text="(풍선) 댓글 달기"/>
+            android:src="@drawable/comment"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34px"
+            android:text=" 댓글 달기"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment"
+            android:text="( 2 )"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_color" />
 </RelativeLayout>
+
+

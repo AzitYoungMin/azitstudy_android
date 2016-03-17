@@ -883,7 +883,7 @@ public class Mento_answer extends ConnActivity {
         }
     }
 
-    private void setAddCommentView() {
+    private void setAddCommentView() { // 댓글 추가
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         try {

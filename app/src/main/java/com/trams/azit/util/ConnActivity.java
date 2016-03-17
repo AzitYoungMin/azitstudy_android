@@ -156,6 +156,30 @@ public class ConnActivity extends FragmentActivity {
         client.post(subUrl, params, receiveHandler);
     }
 
+    protected void requestMultipart2(String subUrl, JSONObject jsonObj, RequestParams params, ConnHttpResponseHandler receiveHandler) {
+        Log.d(TAG, "ConnActivity requestMultipart start");
+        Log.d(TAG, "ConnActivity requestMultipart , subUrl : " + subUrl);
+        Log.d(TAG, "ConnActivity requestMultipart , jsonObj : " + jsonObj.toString());
+        Log.d(TAG, "ConnActivity requestMultipart , params : " + params.toString());
+
+        if (pd != null) {
+            pd.show();
+        }
+
+        StringEntity entity = null;
+        entity = new StringEntity(jsonObj.toString(), "UTF-8");
+
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.setTimeout(15000);
+        client.setResponseTimeout(15000);
+        client.setConnectTimeout(15000);
+
+
+
+        params.put("jsonbody", entity);
+        client.post(subUrl, params, receiveHandler);
+    }
+
     protected void requestJson(String subUrl, JSONObject jsonObj, ConnHttpResponseHandler receiveHandler) {
         if (pd != null) {
             pd.show();

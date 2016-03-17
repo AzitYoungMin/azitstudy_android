@@ -25,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 import com.trams.azit.util.ConnFragment;
 import com.trams.azit.util.Url_define;
@@ -50,6 +51,7 @@ public class Free_Borad extends ConnFragment {
     ListView meet_mentor_list;
     private int noOfBtns, CurrentPage = 0;
     private boolean hasFooter = false;
+    public String image_src = null;
     ImageView num_left, num_right;
     public int NUM_ITEMS_PAGE = 9;
     LinearLayout ll;
@@ -114,6 +116,8 @@ public class Free_Borad extends ConnFragment {
         try {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("secret", secret);
+            jsonObject.put("user_id", user_id);
+
 
             requestJson("http://192.168.1.21:2000/FreeBorad/", jsonObject, new ConnHttpResponseHandler() {
                 @Override
@@ -125,7 +129,7 @@ public class Free_Borad extends ConnFragment {
                     try {
                         for (int i = 0; i < response.length(); i++) {
                             int is_answered = 0;
-                            addItem(response.getJSONObject(i).getInt("Posting_id"), response.getJSONObject(i).getString("Title"), response.getJSONObject(i).getString("Content"), response.getJSONObject(i).getString("Text"), response.getJSONObject(i).getString("Created_at"), String.valueOf(response.getJSONObject(i).getInt("Num_of_reply")));
+                            addItem(response.getJSONObject(i).getInt("Posting_id"), response.getJSONObject(i).getString("Title"), response.getJSONObject(i).getString("Content"), response.getJSONObject(i).getString("Text"), response.getJSONObject(i).getString("Image") ,response.getJSONObject(i).getString("Created_at"),response.getJSONObject(i).getString("User_image"), String.valueOf(response.getJSONObject(i).getInt("Num_of_reply")));
                         }
 
                        /* String noOfBtn = response.getString("last_page_number");
@@ -231,14 +235,16 @@ public class Free_Borad extends ConnFragment {
         }
     }
 
-    public void addItem(int idx, String title, String name,String text, String time, String comment) {
+    public void addItem(int idx, String title, String name,String text, String image ,String time, String user_image, String comment) {
         AnswerListData addInfo = null;
         addInfo = new AnswerListData();
         addInfo.idx = idx;
         addInfo.Title = title;
         addInfo.Name = name;
         addInfo.Text = text;
+        addInfo.Image = image;
         addInfo.Time = time;
+        addInfo.User_Image = user_image;
         addInfo.Comment = comment;
         mArrayList.add(addInfo);
     }
@@ -296,10 +302,10 @@ public class Free_Borad extends ConnFragment {
             }
 
             final AnswerListData mData = mListData.get(position);
-            long now = System.currentTimeMillis();
+           /* long now = System.currentTimeMillis();
             Date date = new Date(now);
 
-            String start = mData.Time;
+            String start = ;
 
             try {
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd" , Locale.KOREA);
@@ -319,7 +325,7 @@ public class Free_Borad extends ConnFragment {
                     holder.Time.setText(gg11 + "일 전");
                 } else {
                     //분 and 시간 으로 계산하는거 나중에 구해야함... 일단은 이정도..
-                    holder.Time.setText("5시간 전");
+                    holder.Time.setText(mData.Time);
 
                 }
 
@@ -327,25 +333,30 @@ public class Free_Borad extends ConnFragment {
 
             } catch (ParseException e) {
                 e.printStackTrace();
-            }
+            }*/
 
-            holder.Title.setText(mData.Title);
-            holder.Name.setText(mData.Name + " :");
+            //holder.Title.setText(mData.Title);
+            holder.Name.setText(mData.Name);
             holder.Text.setText(mData.Text);
-            //holder.Time.setText(mData.Time);
+            holder.Time.setText(mData.Time);
             holder.Comment.setText(mData.Comment);
 
-            ImageView imm = (ImageView) convertView.findViewById(R.id.imageView7);
-
             ImageView img = (ImageView) convertView.findViewById(R.id.user_img);
+            ImageView ims = (ImageView) convertView.findViewById(R.id.image_ser);
 
-            Picasso.with(convertView.getContext()).load("http://52.192.0.99:5000/images/profiles/20160303/63/9859e0b8-a4a5-4859-919a-bdf9c19df6c6.jpg").into(img);
-
-            if(mData.Comment != "0") {
-                imm.setImageResource(R.drawable.comment);
+            if (mData.Image.equals("none")) {
+               // Picasso.with(convertView.getContext()).load("http://192.168.1.21:2000/5577006791947779410.jpg").into(ims);
+                ims.setVisibility(View.GONE);
             } else {
-                imm.setImageResource(R.drawable.comment_grey);
+                ims.setVisibility(View.VISIBLE);
+                Picasso.with(convertView.getContext()).load("http://192.168.1.21:2000/" + mData.Image).into(ims);
+
             }
+
+
+             Picasso.with(convertView.getContext()).load(Url_define.BASE_Image + mData.User_Image).placeholder(R.drawable.profile_basic_icon).error(R.drawable.profile_basic_icon).fit().into(img);
+
+
 
             return convertView;
         }

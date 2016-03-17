@@ -18,7 +18,7 @@ public class GlobalFont extends Application {
         super.onCreate();
         Typekit.getInstance()
                // .addNormal(Typekit.createFromAsset(this, "KoPubBatangMedium.ttf"))
-                //.addBold(Typekit.createFromAsset(this, "KoPubBatangBold.ttf"));
+               // .addBold(Typekit.createFromAsset(this, "KoPubBatangBold.ttf"));
 
                 .addNormal(Typekit.createFromAsset(this, "NanumGothic.ttf"))
                 .addBold(Typekit.createFromAsset(this, "NanumGothicBold.ttf"));

@@ -9,8 +9,10 @@ public class AnswerListData {
     public String Title;
     public String Name;
     public String Text;
+    public String Image;
     public String Time;
     public String Comment;
+    public String User_Image;
     public String posting_id;
     public Boolean is_answered;
 }
